@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage'
 import PhotoBooth from './components/PhotoBooth'
 import Gallery from './components/Gallery'
 import Confetti from './components/Confetti'
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [currentPage, setCurrentPage] = useState('landing')
@@ -26,6 +27,7 @@ function App() {
         style={{ backgroundImage: 'url(/birthday-pattern.png)', backgroundSize: '500px' }}
       />
       
+      <Analytics/>
       <Confetti />
 
       {/* Main content */}
